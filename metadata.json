@@ -1,0 +1,7 @@
+{
+  "name": "Espaço Edy - Locação para Festas e Eventos",
+  "description": "Landing page profissional para o Espaço Edy, destacando sua infraestrutura completa para eventos, festas e lazer.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
