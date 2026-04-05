@@ -46,26 +46,32 @@ export default function App() {
   const testimonials = [
     {
       name: 'Maria Silva',
+      image: 'https://randomuser.me/api/portraits/women/44.jpg',
       text: 'Espaço maravilhoso! A piscina é incrível e o atendimento foi nota 10. Recomendo muito para festas de aniversário.'
     },
     {
       name: 'João Santos',
+      image: 'https://randomuser.me/api/portraits/men/32.jpg',
       text: 'Realizamos nossa confraternização da empresa e foi um sucesso. O salão é amplo e a área gourmet é muito completa.'
     },
     {
       name: 'Ana Oliveira',
+      image: 'https://randomuser.me/api/portraits/women/68.jpg',
       text: 'Lugar aconchegante e muito bem cuidado. As redes na varanda são um diferencial delicioso para relaxar.'
     },
     {
       name: 'Carlos Lima',
+      image: 'https://randomuser.me/api/portraits/men/46.jpg',
       text: 'A mesa de sinuca é muito boa e o espaço é bem ventilado. Perfeito para um churrasco com os amigos.'
     },
     {
       name: 'Fernanda Costa',
+      image: 'https://randomuser.me/api/portraits/women/24.jpg',
       text: 'Tudo muito limpo e organizado. A iluminação do salão à noite fica linda para fotos.'
     },
     {
       name: 'Ricardo Alves',
+      image: 'https://randomuser.me/api/portraits/men/78.jpg',
       text: 'Excelente custo-benefício. O Espaço Edy superou nossas expectativas para o chá de bebê.'
     }
   ];
@@ -483,7 +489,7 @@ export default function App() {
                   >
                     <div className="mb-6">
                       <img
-                        src={`https://picsum.photos/seed/${testimonial.name}/100/100`}
+                        src={testimonial.image}
                         alt={`Foto de ${testimonial.name}`}
                         className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-brand-pool object-cover shadow-xl"
                         referrerPolicy="no-referrer"
