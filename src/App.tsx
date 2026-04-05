@@ -138,7 +138,8 @@ export default function App() {
       'Piscina com área de sol',
       'Churrasqueira completa',
       'Freezer e Geladeira',
-      'Fogão industrial',
+      'Mesa de madeira para 12 pessoas',
+      'Mesas e cadeiras de plástico',
       'Mesa de Sinuca e Pebolim',
       'Wi-Fi de alta velocidade',
       'Banheiros acessíveis',
@@ -153,8 +154,7 @@ export default function App() {
       'Copos e guardanapos',
       'Toalhas de banho/piscina',
       'Itens de higiene pessoal',
-      'Sacos de lixo extras',
-      'Repelente e protetor solar'
+      'Sacos de lixo extras'
     ]
   };
 
@@ -521,25 +521,26 @@ export default function App() {
               {/* Map Column - Smaller and Integrated */}
               <div className="lg:col-span-1 flex flex-col">
                 <h2 className="text-lg font-bold mb-3 text-brand-dark uppercase tracking-wider">Local</h2>
-                <div className="bg-white p-2 rounded-2xl shadow-sm mb-3">
-                  <div className="h-20 md:h-24 rounded-xl overflow-hidden bg-brand-teal/5 relative border border-brand-teal/10">
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-2">
-                      <MapPin className="w-5 h-5 text-brand-pool mb-1" />
-                      <p className="text-brand-dark font-bold text-[10px]">Espaço Edy</p>
+                <a href="https://maps.app.goo.gl/oJPsKJqj3ZDwjZfM6" target="_blank" rel="noopener noreferrer" className="block bg-white p-2 rounded-2xl shadow-sm mb-3 hover:shadow-md transition-shadow group cursor-pointer" aria-label="Ver no Google Maps">
+                  <div className="h-32 md:h-40 rounded-xl overflow-hidden bg-brand-teal/5 relative border border-brand-teal/10 transition-colors">
+                    <img src="/mapa.png" alt="Mapa de Localização" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col items-center justify-end text-center p-3 opacity-90 group-hover:opacity-100 transition-opacity">
+                      <MapPin className="w-6 h-6 text-brand-yellow mb-1 drop-shadow-md group-hover:-translate-y-1 transition-transform" />
+                      <p className="text-white font-bold text-xs drop-shadow-md">Abrir no mapa</p>
                     </div>
                   </div>
-                </div>
-                <div className="flex items-start gap-2 text-gray-600 bg-white p-3 rounded-xl shadow-sm">
-                  <MapPin className="text-brand-pool w-3.5 h-3.5 flex-shrink-0" />
-                  <p className="text-[9px] leading-tight">Rua das Palmeiras, 456 - São Paulo - SP</p>
-                </div>
+                </a>
+                <a href="https://maps.app.goo.gl/oJPsKJqj3ZDwjZfM6" target="_blank" rel="noopener noreferrer" className="flex items-start gap-2 text-gray-600 bg-white p-3 rounded-xl shadow-sm hover:shadow-md transition-all group cursor-pointer" aria-label="Abrir endereço no mapa">
+                  <MapPin className="text-brand-pool w-3.5 h-3.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                  <p className="text-[15px] leading-tight group-hover:text-brand-pool transition-colors">Avenida Dalila, 501- Jardim Margarida - Mogi Das Cruzes - SP</p>
+                </a>
               </div>
 
               {/* Form Column - Simplified */}
               <div className="lg:col-span-2 bg-white p-5 md:p-8 rounded-3xl shadow-xl border border-brand-teal/5">
                 <div className="mb-5">
                   <span className="text-brand-pool font-bold text-[9px] uppercase tracking-[0.2em]">Contato Rápido</span>
-                  <h2 id="contact-title" className="text-lg md:text-xl font-bold mt-1 text-brand-dark">Reserve sua Data</h2>
+                  <h2 id="contact-title" className="text-lg md:text-xl font-bold mt-1 text-brand-dark">Consulte sua data</h2>
                 </div>
 
                 <form className="space-y-3 md:space-y-4" onSubmit={handleWhatsAppSubmit} aria-labelledby="contact-title">
@@ -591,6 +592,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-    </div>
+    </div >
   );
 }
