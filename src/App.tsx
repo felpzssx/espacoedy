@@ -469,16 +469,12 @@ export default function App() {
                                 { img: '/imagemevento5.jpeg', span: 'col-span-1' },
                                 { img: '/imagemevento6.jpeg', span: 'md:col-span-2' }
                             ].map((item, index) => (
-                                <motion.div
+                                <div
                                     key={index}
-                                    whileHover={{ scale: 0.98 }}
-                                    className={`relative overflow-hidden rounded-3xl cursor-pointer ${item.span} group shadow-lg`}
+                                    className={`relative overflow-hidden rounded-3xl ${item.span} shadow-lg`}
                                 >
                                     <img src={item.img} className="w-full h-full object-cover aspect-square md:aspect-auto" alt={`Galeria ${index + 1}`} />
-                                    <div className="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
-                                        <Plus className="text-white w-10 h-10" />
-                                    </div>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
                     </div>
