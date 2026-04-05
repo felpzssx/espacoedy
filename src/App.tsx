@@ -462,12 +462,14 @@ export default function App() {
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                             {[
-                                { img: '/piscina.jpg', span: 'md:col-span-2 md:row-span-2' },
-                                { img: '/salaoprincipal.jpg', span: 'col-span-1' },
-                                { img: '/espacogouret.jpg', span: 'col-span-1' },
-                                { img: '/mesadesinuca.jpg', span: 'col-span-1' },
-                                { img: '/areaexterna.jpg', span: 'col-span-1' },
-                                { img: '/salaodefesta.jpg', span: 'md:col-span-2' }
+                                { img: '/imagemevento.jpeg', span: 'md:col-span-2 md:row-span-2' },
+                                { img: '/imagemevento2.jpeg', span: 'col-span-1' },
+                                { img: '/imagemevento3.jpeg', span: 'col-span-1' },
+                                { img: '/imagemevento4.jpeg', span: 'col-span-1' },
+                                { img: '/imagemevento5.jpeg', span: 'col-span-1' },
+                                { img: '/imagemevento6.jpeg', span: 'md:col-span-2' },
+                                { img: '/piscina.jpg', span: 'col-span-1' },
+                                { img: '/areaexterna.jpg', span: 'col-span-1' }
                             ].map((item, index) => (
                                 <motion.div
                                     key={index}
