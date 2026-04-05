@@ -467,9 +467,7 @@ export default function App() {
                                 { img: '/imagemevento3.jpeg', span: 'col-span-1' },
                                 { img: '/imagemevento4.jpeg', span: 'col-span-1' },
                                 { img: '/imagemevento5.jpeg', span: 'col-span-1' },
-                                { img: '/imagemevento6.jpeg', span: 'md:col-span-2' },
-                                { img: '/piscina.jpg', span: 'col-span-1' },
-                                { img: '/areaexterna.jpg', span: 'col-span-1' }
+                                { img: '/imagemevento6.jpeg', span: 'md:col-span-2' }
                             ].map((item, index) => (
                                 <motion.div
                                     key={index}
